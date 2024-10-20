@@ -26,7 +26,4 @@ if __name__ == "__main__":
 
 
 
-# The code prints the name of the current thread twice:
-# Before the model instance is created (in the main program).
-# Inside the my_signal_receiver function, when the signal is triggered.
-# Both thread names will match, proving that the signal handler runs in the same thread as the caller.
+# The output will show that the thread name is the same in both the main program and the signal receiver, confirming that Django signals run in the same thread by default.
